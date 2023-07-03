@@ -1,2 +1,2 @@
-# hcadd-OMS
-Order Management System
+# hcadd-OMS-API
+Order Management System api
