@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>诺玛迷宫 - Mir3资料库</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: #8b8b8b;
+            font-family: '微软雅黑', sans-serif;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #2b1d0e;
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .title {
+            font-size: 2.8rem;
+            color: #c58a4d;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+            letter-spacing: 2px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+            gap: 2rem;
+        }
+
+        .gallery-item {
+            border: 3px solid #2b1d0e;
+            background: #1a1a1a;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 650px;
+            object-fit: cover;
+            border-bottom: 3px solid #2b1d0e;
+            display: block;
+        }
+
+        .img-caption {
+            padding: 1.2rem;
+            background: rgba(10, 10, 10, 0.9);
+        }
+
+        .img-title {
+            color: #c58a4d;
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .img-desc {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-img {
+                height: 400px;
+            }
+            
+            .title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">诺玛迷宫</h1>
+        </header>
+        
+        <div class="gallery">
+            <!-- 图片项1 -->
+            <div class="gallery-item">
+                <img src="img/numa-1.png" 
+                     alt="诺玛迷宫" 
+                     class="gallery-img">
+                <!-- <div class="img-caption">
+                    <h3 class="img-title">永夜要塞</h3>
+                    <p class="img-desc">矗立在悬崖边缘的古老城堡，传说中吸血鬼领主的最后据点</p>
+                </div> -->
+            </div>
+
+            <!-- 图片项2 -->
+            <div class="gallery-item">
+                <img src="img/numa-2.png" 
+                     alt="诺玛迷宫" 
+                     class="gallery-img">
+                <!-- <div class="img-caption">
+                    <h3 class="img-title">无尽回廊</h3>
+                    <p class="img-desc">深藏地底的古老迷宫，墙壁上刻满失落的禁忌符文</p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
